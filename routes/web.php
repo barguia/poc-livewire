@@ -12,4 +12,5 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+Route::get('rule', \App\Livewire\Acl\Rule::class)->name('rule');
 require __DIR__.'/auth.php';
